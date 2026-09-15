@@ -6,6 +6,7 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
+	<title>SvelteKit Todos</title>
 </svelte:head>
 
 {@render children()}
