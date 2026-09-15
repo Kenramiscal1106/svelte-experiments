@@ -5,7 +5,7 @@ export const task = pgTable('task', {
 	title: varchar("title").notNull(),
 	priority: integer("priority").notNull().default(1),
 	done: boolean("done").notNull().default(false),
-	userId: uuid("user_id").references(() => user.id)
+	userId: uuid("user_id").references(() => user.id).notNull()
 });
 
 export const user = pgTable('user', {
