@@ -3,7 +3,6 @@
 
 </script>
 
-
 <form {...addTask}>
     <input {...addTask.fields.title.as("text")} />
     {#each addTask.fields.title.issues() as issues}
@@ -26,6 +25,6 @@
 
 <style>
     input:user-invalid {
-        border:1px solid red;
+        border:1px solid rgb(255, 0, 0);
     }
 </style>
